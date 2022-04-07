@@ -1,0 +1,22 @@
+//My Theme Colors
+$pink: #f2e1d9;
+$red-light: #fd8f5f;
+$red-dark: #670000;
+$indigo: #1d2547;
+$blue: #010a44;
+
+$white: #fff;
+$gray-400: #c2c5db;
+$gray-500: #c2b6bb;
+$gray-600: #7f85a8;
+$gray-700: #57667e;
+$gray-900: #2b2b2b;
+$gray-1000: #212529;
+$black: #1a1a1a;
+
+$primary: $pink;
+$secondary: $red-light;
+$navbar-brand-padding-y: 0;
+
+//Import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

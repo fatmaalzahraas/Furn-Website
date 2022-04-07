@@ -1,0 +1,212 @@
+@use "../custom" as *;
+@use "../globalrules" as *;
+@use "../components/mixins" as m;
+@use "../components/animations" as *;
+@use "../nice-select" as *;
+
+.shop-with-us {
+    padding: 5rem 0;
+    .title {
+        h2 {
+            color: $black;
+            font: {
+                size: $h2 - 2px;
+                weight: 700;
+            };
+            margin-bottom: 1.1rem;
+        }
+        p {
+            color: $gray-600;
+            font-weight: 400;
+        }
+    }
+    .sub-title {
+        font-size: $h5 + 1px;
+        color: $black;
+    }
+    .filter-title {
+        margin-top: 1.8rem;
+        .icon {
+            margin-right: 1rem;
+            i {
+                color: #228B22;
+            }
+        }
+    }
+    .filter-content {
+        margin-top: 1.8rem;
+        margin-bottom: 3.5rem;
+        border: 1px solid $gray-100;
+        box-shadow: 0 10px 10px 0 rgb(153 153 153 / 10%);
+        padding: 1.7rem 1.3rem 1rem 1.3rem;
+        .box {
+            .nice-select {
+                margin-bottom: 1.3rem;
+                @include m.prefix(border-radius, 0, webkit moz ms o);
+                color: $gray-700;
+                .list {
+                    @include m.prefix(border-radius, 0, webkit moz ms o); 
+                }
+            }
+        }
+    }
+    span.irs-from, span.irs-to, .irs-max, .irs-min {
+        display: none;
+    }
+    .irs--round .irs-handle {
+        width: 15px;
+        height: 15px;
+        top: 29px;
+        border: 1px solid $secondary;
+        @include m.prefix(border-radius, 3px, webkit moz ms o);
+    }
+    .irs--round .irs-bar {
+        height: 2px;
+        background-color: $secondary;
+    }
+    .irs--round .irs-line {
+        height: 2px;
+    }
+    .range-of-price {
+        .from-range {
+            margin-top: 0.8rem;
+            display: flex;
+            .price {
+                span {
+                    color: $gray-700;
+                    font-size: $paragh - 2px;
+                }
+            }
+            .from-to {
+                input {
+                    max-width: 50px;
+                    text-align: center;
+                    border: 0;
+                }
+            }
+        }
+        
+    }
+    .latest-product {
+        margin-top: 1.8rem;
+        border: 1px solid $gray-100;
+        box-shadow: 0 10px 10px 0 rgb(153 153 153 / 10%);
+        padding: 1.7rem 1.3rem 1rem 1.3rem;
+        h4 {
+            margin-bottom: 1.4rem;
+        }
+        .check {
+            margin-top: 0.8rem;
+            label {
+                position: relative;
+                color: $gray-700;
+                font-size: $paragh - 1px;
+                padding-left: 2rem;
+                user-select: none;
+                cursor: pointer;
+            }
+            input[type=checkbox] {
+                display: none;
+            }
+            input[type=checkbox] + label:before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 0;
+                @include m.prefix(transform, translateY(-50%), webkit moz ms o);
+                width: 20px;
+                height: 20px;
+                border: 1px solid $gray-300;
+            }
+            input[type=checkbox] + label::after {
+                @extend %fa-icon;
+                @extend .fas;
+                content: fa-content($fa-var-check);
+                position: absolute;
+                top: 50%;
+                left: 0;
+                @include m.prefix(transform, translateY(-50%), webkit moz ms o);
+                color: $white;
+                text-align: center;
+                width: 20px;
+                height: 20px;
+                background-color: $secondary;
+                font-size: $paragh - 2px;
+                line-height: 20px;
+                display: none;
+            }
+            input[type=checkbox]:checked + label::after {
+                display: block;
+            }
+        }
+    }
+    .product-search {
+        margin-bottom: 2rem;
+        @include media-breakpoint-down(md) {
+            margin-top: 2.3rem;
+        }
+        span {
+            color: $black;
+        }
+        .product-sort {
+            align-items: center;
+            @include media-breakpoint-down(md) {
+                margin-top: 1.5rem;
+            }
+            span {
+                margin-right: 1.2rem;
+            }
+            .sort-select {
+                .nice-select {
+                    @include m.prefix(border-radius, 0, webkit moz ms o);
+                    height: 35px;
+                    line-height: 35px;
+                    .list {
+                        @include m.prefix(border-radius, 0, webkit moz ms o); 
+                    }
+                }
+            }
+        }
+    }
+    .products-result {
+        .single-product {
+            border: 1px solid $gray-100;
+            margin-bottom: 2.3rem;
+            @include m.transition(0.5s);
+            .image {
+                img {
+                    width: 100%;
+                }
+            }
+            .product-caption {
+                text-align: center;
+                padding: 1.7rem 1rem;
+                h3 { 
+                    line-height: 1;
+                    a {
+                        text-decoration: none;
+                        color: $black;
+                        font-size: $paragh;
+                        
+                    }
+                }
+                span {
+                    color: $red-dark;
+                    font-size: $h4;
+                    font-weight: 600;
+                    margin-top: 1.5rem;
+                    display: block;
+                }
+            }
+            &:hover .product-caption h3 a {
+                text-decoration: underline;
+                @include m.transition(0.4s);
+            }
+        }
+        button {
+            margin-top: 1.5rem;
+            padding: 15px 45px;
+            font-size: $paragh;
+        }
+    }
+}

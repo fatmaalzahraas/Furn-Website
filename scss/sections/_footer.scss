@@ -1,0 +1,152 @@
+@use "../custom" as *;
+@use "../globalrules" as *;
+@use "../components/mixins" as m;
+@use "../components/animations" as *;
+
+
+.Advantages {
+    position: relative;
+    @include media-breakpoint-up(lg) {
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 20px;
+            height: 100%;
+            background-color: $white;
+        }
+    }
+    .Advantages-info {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        .advan-content {
+            @include m.opacity(0, hidden);
+            img {
+                @include m.transition(0.3s);
+            }
+            h4 {
+                color: $gray-900;
+                margin-top: 1.7rem;
+                margin-bottom: 0.8rem;
+                @include m.transition(0.3s);
+                @include media-breakpoint-up(xl) {
+                    font-size: $h4;
+                } 
+                @include media-breakpoint-between(sm, xl) {
+                    font-size: $h4 - 2px;
+                }
+            }
+            p {
+                color: $gray-700;
+                font-size: $paragh;
+                @include m.transition(0.3s)
+            }
+            &.advant-one {
+                animation-delay: 0.4s;
+            }
+            &.advant-two {
+                animation-delay: 0.6s;
+            }
+            &.advant-three {
+                animation-delay: 0.9s;
+            }
+            &.advant-four {
+                animation-delay: 1s;
+            }
+        }
+    }    
+}
+footer {
+    background-color: $indigo;
+    position: relative;
+    @include media-breakpoint-up(lg) {
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 100%;
+            background-color: $primary;
+        }
+    }
+    .footer-content {
+        padding-top: 6rem;
+        padding-bottom: 5rem;
+        .footer-info {
+            margin-bottom: 2rem;
+            p {
+                color: $gray-400;
+                font-size: $paragh - 2px;
+                margin-top: 1.9rem;
+                margin-bottom: 3rem;
+                line-height: 1.8;
+                @include media-breakpoint-up(lg) {
+                    width: 70%;
+                }
+            }
+            .social {
+                a {
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    @include m.prefix(border-radius, 50%, webkit moz ms o);
+                    border: 1px solid $white;
+                    text-align: center;
+                    display: inline-block;
+                    font-size: $paragh - 2px;
+                    @include m.transition(0.3s);
+                    &:nth-child(2) {
+                        margin: 0 0.5rem;
+                    }
+                   
+                    i {
+                        color: $white;
+                        display: inline-block;
+                        @include m.transition(0.3s);
+                        
+                    }
+                    &:hover {
+                        background-color: $secondary;
+                    }
+                    &:hover i {
+                        @include m.prefix(transform, rotateY(180deg), webkit moz ms o);
+                    }
+                }
+            }
+        }
+        .footer-links {
+            h5 {
+                color: $white;
+                font-size: $h5;
+                margin-bottom: 2rem;
+                @include media-breakpoint-up(lg) {
+                    margin-bottom: 2.6rem;
+                }
+            }
+            ul {
+                li {
+                    margin-bottom: 1.2rem;
+                    a {
+                        text-decoration: none;
+                        color: $gray-400;
+                        font-size: $paragh - 2px;
+                        @include m.transition(0.3s);
+                    }
+                    &:hover a {
+                        text-decoration: underline;
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+    }
+    span {
+        display: block;
+        color: $gray-400;
+        text-align: center;
+        padding-bottom: 2.3rem;
+        font-size: $paragh - 2px;
+    }
+}

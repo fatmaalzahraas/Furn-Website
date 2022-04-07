@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furn Website</title>
+    <link rel="stylesheet" href="assets/css/products.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link href="assets/images/icon.png" rel="icon">
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader-inline">
+            <div class="circle">
+            </div>
+            <div class="image">
+                <img src="assets/images/logosticky.webp" alt="loader">
+            </div>
+        </div>
+    </div>
+    <!-- Start Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light menu py-0 align-items-start">
+        <a class="navbar-brand logo-link me-0" href="index.html">
+            <img class="logo" src="assets/images/logo.webp" alt="logo">
+            <img class="sticky-logo" src="assets/images/logosticky.webp" alt="logo">
+        </a>
+        <div class="toggler">
+            <button class="navbar-toggler btn-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span>Menu</span> <span class="navbar-toggler-icon"></span>
+             </button>
+        </div>
+        <div class="nav-content bg-primary">
+            <div class="container contain">
+                <div class="collapse navbar-collapse link-content" id="navbarSupportedContent">
+                    <div class="nav-contain">
+                        <ul class="navbar-nav nav-links">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="products.html">Product</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item drop-menu">
+                                <a class="nav-link page-icon" href="#">Page <i class="fas fa-plus plus-icon d-lg-none"></i></a>                
+                                <ul class="sub-menu">
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="card.html">Card</a></li>
+                                    <li><a href="categories.html">Categories</a></li>
+                                    <li><a href="checkout.html">Checkout</a></li>
+                                    <li><a href="product-detail.html">Product Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="nav-search d-flex ms-lg-auto">
+                            <form>
+                                <input class="form-control search" type="search" placeholder="Search Products">
+                                 <i class="fas fa-search"></i>
+                            </form>
+                            <a class="text-decoration-none account-link" href="login.html">My Account</a>
+                            <div class="icon-content">
+                                <img src="assets/images/shopping-bag.png" alt="shop-icon" class="store-icon">
+                                <span class="cart-number">0</span>
+                            </div> 
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        
+    </nav>
+    <!-- End Navbar Section -->
+    <!--Start Slide Section -->
+    <section class="slide">
+        <div class="slide-container start-sticky">
+            <div class="container info">
+                <h1 class="text-uppercase">products</h1>
+                <nav class="crumb-title" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a class="home-link text-decoration-none text-capitalize" href="index.html">home</a></li>
+                      <li class="breadcrumb-item active page-title text-capitalize-current=" aria-current="page">products</li>
+                    </ol>
+                  </nav>
+            </div>
+        </div>
+    </section>
+    <!--End Slide Section -->
+    <section class="popular-products">
+        <div class="container">
+            <h2 class="heading text-uppercase text-center animate">popular products</h2>
+            <p class="paragrph text-capitalize mx-auto text-center animate">Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="tabs">
+                        <div class="nav nav-tabs tab-menu justify-content-center">
+                              <a class="nav-link active text-capitalize tab-link" data-bs-toggle="tab" data-bs-target="#sofa" aria-current="page"  href="#">sofa</a>
+                              <a class="nav-link text-capitalize tab-link" data-bs-toggle="tab" data-bs-target="#table"  href="#">table</a>
+                              <a class="nav-link text-capitalize tab-link" data-bs-toggle="tab" data-bs-target="#chair" href="#">chair</a>
+                              <a class="nav-link text-capitalize tab-link" data-bs-toggle="tab" data-bs-target="#bed"  href="#">bed</a>
+                              <a class="nav-link text-capitalize tab-link" data-bs-toggle="tab" data-bs-target="#lightning" href="#">lightning</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane active" id="sofa">
+                    <div class="row gy-5 layout" data-category="sofa">
+                    </div>
+                </div>
+                <div class="tab-pane" id="table">
+                    <div class="row gy-5 layout" data-category="table">
+                    </div>
+                </div>
+                <div class="tab-pane" id="chair">
+                    <div class="row gy-5 layout" data-category="chair">
+                    </div>
+                </div>
+                <div class="tab-pane" id="bed">
+                    <div class="row gy-5 layout" data-category="bed">
+                    </div>
+                </div>
+                <div class="tab-pane" id="lightning">
+                    <div class="row gy-5 layout" data-category="lightning">
+                    </div>
+                </div>
+            </div>
+            <button class="btn main-btn top-btn mx-auto discover"><a href="#" class="text-uppercase text-decoration-none">discover more</a></button>
+        </div>
+    </section>
+    <!-- Start Advantages -->
+    <section class="Advantages bg-primary">
+        <div class="container">
+            <div class="Advantages-info">
+                <div class="row gy-5">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="advan-content animate advant-one">
+                            <img src="assets/images/services1.svg" alt="service">
+                            <h4 class="text-capitalize">fast & free delivery</h4>
+                            <p>Free delivery on all orders</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="advan-content animate advant-two">
+                            <img src="assets/images/services2.svg" alt="service">
+                            <h4 class="text-capitalize">secure payment</h4>
+                            <p>Free delivery on all orders</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="advan-content animate advant-three">
+                            <img src="assets/images/services3.svg" alt="service">
+                            <h4 class="text-capitalize">money back guarantee</h4>
+                            <p>Free delivery on all orders</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="advan-content animate advant-four">
+                            <img src="assets/images/services4.svg" alt="service">
+                            <h4 class="text-capitalize">online support</h4>
+                            <p>Free delivery on all orders</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Advantages -->
+     <!-- Start Footer -->
+     <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="row gy-4 justify-content-between">
+                    <div class="col-sm-7 col-lg-4">
+                        <div class="footer-info">
+                            <a href="#"><img src="assets/images/logosticky.webp" alt="footer logo"></a>
+                            <p>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
+                            <div class="social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-lg-2">
+                        <div class="footer-links">
+                            <h5 class="text-capitalize">quick links</h5>
+                            <ul class="list-unstyled">
+                                <li><a class="text-capitalize" href="#">image licensin</a></li>
+                                <li><a class="text-capitalize" href="#">style guide</a></li>
+                                <li><a class="text-capitalize" href="#">privacy policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-lg-2">
+                        <div class="footer-links">
+                            <h5 class="text-capitalize">shop category</h5>
+                            <ul class="list-unstyled">
+                                <li><a class="text-capitalize" href="#">image licensin</a></li>
+                                <li><a class="text-capitalize" href="#">style guide</a></li>
+                                <li><a class="text-capitalize" href="#">privacy policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-lg-2">
+                        <div class="footer-links">
+                            <h5 class="text-capitalize">Partners</h5>
+                            <ul class="list-unstyled">
+                                <li><a class="text-capitalize" href="#">image licensin</a></li>
+                                <li><a class="text-capitalize" href="#">style guide</a></li>
+                                <li><a class="text-capitalize" href="#">privacy policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span>Copyright ©2022 All rights reserved</span>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Start Go To Top -->
+    <button class="btn go-to-top">
+        <i class="fas fa-level-up-alt"></i>
+    </button>
+    <!-- End Go To Top -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

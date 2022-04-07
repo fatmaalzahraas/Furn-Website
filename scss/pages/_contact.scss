@@ -1,0 +1,100 @@
+@use "../custom" as *;
+@use "../globalrules" as *;
+@use "../components/mixins" as m;
+@use "../components/animations" as *;
+
+.contact-us {
+    padding: 4.5rem 0;
+    @include media-breakpoint-up(sm) {
+        padding: 8rem 0;
+    }
+    .map {
+        iframe {
+            filter: grayscale(50%) invert(80%);
+            -webkit-filter: grayscale(50%) invert(80%);
+}
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+    }
+    .get-in-touch {
+        @include media-breakpoint-up(sm) {
+            margin-top: 2rem;
+        }
+        h2 {
+            font: {
+                weight: 600;
+                size: $h3 - 3px;
+            }
+            margin-bottom: 1.5rem;
+        }
+        form {
+            .form-style {
+                border: 1px solid $gray-300;
+                padding: 0.6rem 1rem;
+                &:focus {
+                    border: 1px solid $gray-400;
+                }
+            }
+            input {
+                height: 45px;
+            }
+            textarea {
+                height: 180px;
+            }
+            @include m.placeholder {
+                color: $gray-500;
+                font: {
+                    size: $paragh - 2px;
+                    weight: 100;
+                };
+            }
+            button {
+                margin-top: 1rem;
+                border: 1px solid $secondary;
+                a {
+                    color: $secondary;
+                    @include m.transition(0.3s);
+                }
+                &:hover {
+                    background-color: $secondary;
+                }
+                &:hover a {
+                    color: $white;
+                }
+                @include m.transition(0.3s);
+            }
+        }
+        .address-container {
+            @include media-breakpoint-up(lg) {
+                margin-left: 5rem;
+            }
+            @include media-breakpoint-down(lg) {
+                margin-top: 2rem;
+            }
+            .address {
+                margin-bottom: 2rem;
+                display: flex;
+                span {
+                    margin-right: 1.5rem;
+                    text-align: center;
+                    i {
+                        color: $gray-700;
+                        font-size: $h3 - 1px;
+                    }
+                }
+                .address-info {
+                    h3 {
+                        color: $black;
+                        font-size: $paragh;
+                        margin-bottom: 0;
+                    }
+                    p {
+                        color: $gray-700;
+                        font-size: $paragh - 2px;
+                    }
+                }
+            }
+        } 
+    }
+}

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furn Website</title>
+    <link rel="stylesheet" href="assets/css/product-detail.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link href="assets/images/icon.png" rel="icon">
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader-inline">
+            <div class="circle">
+            </div>
+            <div class="image">
+                <img src="assets/images/logosticky.webp" alt="loader">
+            </div>
+        </div>
+    </div>
+    <!-- Start Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light menu py-0 align-items-start">
+        <a class="navbar-brand logo-link me-0" href="index.html">
+            <img class="logo" src="assets/images/logo.webp" alt="logo">
+            <img class="sticky-logo" src="assets/images/logosticky.webp" alt="logo">
+        </a>
+        <div class="toggler">
+            <button class="navbar-toggler btn-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span>Menu</span> <span class="navbar-toggler-icon"></span>
+             </button>
+        </div>
+        <div class="nav-content bg-primary">
+            <div class="container contain">
+                <div class="collapse navbar-collapse link-content" id="navbarSupportedContent">
+                    <div class="nav-contain">
+                        <ul class="navbar-nav nav-links">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="products.html">Product</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item drop-menu">
+                                <a class="nav-link page-icon" href="#">Page <i class="fas fa-plus plus-icon d-lg-none"></i></a>                
+                                <ul class="sub-menu">
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="card.html">Card</a></li>
+                                    <li><a href="categories.html">Categories</a></li>
+                                    <li><a href="checkout.html">Checkout</a></li>
+                                    <li><a href="product-detail.html">Product Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="nav-search d-flex ms-lg-auto">
+                            <form>
+                                <input class="form-control search" type="search" placeholder="Search Products">
+                                 <i class="fas fa-search"></i>
+                            </form>
+                            <a class="text-decoration-none account-link" href="login.html">My Account</a>
+                            <div class="icon-content">
+                                <img src="assets/images/shopping-bag.png" alt="shop-icon" class="store-icon">
+                                <span class="cart-number">0</span>
+                            </div> 
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        
+    </nav>
+    <!-- End Navbar Section -->
+     <!--Start Slide Section -->
+     <section class="slide">
+        <div class="slide-container start-sticky">
+            <div class="container info">
+                <h1 class="text-uppercase">product details</h1>
+                <nav class="crumb-title" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a class="home-link text-decoration-none text-capitalize" href="index.html">home</a></li>
+                      <li class="breadcrumb-item active page-title text-capitalize-current=" aria-current="page">product details</li>
+                    </ol>
+                  </nav>
+            </div>
+        </div>
+    </section>
+    <!--End Slide Section -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="row item-container">
+               <div class="col-lg-5">
+                <div class="my-slider owl-carousel owl-theme">
+                   <div data-dot="<span><img src='assets/images/sofa-one.jpg'></span>"><img src="assets/images/sofa-one.jpg" alt=""></div>
+                    <div data-dot="<span><img src='assets/images/subsofa1-one.jpg'></span>"><img src="assets/images/subsofa1-one.jpg" alt=""></div>
+                    <div data-dot="<span><img src='assets/images/subsofa2-one.jpg'></span>"><img src="assets/images/subsofa2-one.jpg" alt=""></div>
+                    <div data-dot="<span><img src='assets/images/subsofa3-one.jpg'></span>"><img src="assets/images/subsofa3-one.jpg" alt=""></div>
+                </div>
+               </div>
+               <div class="col-lg-6">
+                   <div class="product-info">
+                       <div class="product-content">
+                        <h3>Bly Microfiber / Microsuede 56" Armless Loveseat</h3>
+                        <span class="price">$149.99</span>
+                        <div class="category">
+                            <span>category</span>
+                            <a href="#">: sofa</a>
+                        </div>
+                        <div class="availibility">
+                            <span>availibility</span>
+                            <span>: in stock</span>
+                        </div>
+                       </div>
+                       <p>Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time.</p>
+                       <div class="product-number">
+                        <i class="fas fa-plus plus"></i>
+                        <input type="text" class="num" value="0">
+                        <i class="fas fa-minus minus"></i>
+                      </div>
+                      <div class="buttons">
+                        <button class="btn main-btn left-btn add-to-cart"><a href="#" class="text-uppercase text-decoration-none">add to cart</a></button>
+                        <i class="fas fa-heart"></i>
+                      </div>
+                      <div class="social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></i></a>
+                      </div>
+                    </div>
+               </div> 
+            </div>
+        </div>
+    </section>
+    <section class="review">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav>
+                        <div class="nav nav-tabs tab-menu">
+                            <a class="nav-link text-capitalize tab-link" data-bs-toggle="tab" data-bs-target="#desc" aria-current="page" href="#">description</a>
+                            <a class="nav-link text-capitalize tab-link" data-bs-toggle="tab" data-bs-target="#specific" href="#">specification</a>
+                            <a class="nav-link text-capitalize tab-link" data-bs-toggle="tab" data-bs-target="#comments" href="#">comments</a>
+                            <a class="nav-link text-capitalize tab-link active" data-bs-toggle="tab" data-bs-target="#review" href="#">reviews</a>
+                      </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane" id="desc">
+                    <div class="desc-content">
+                        <p>Beryl Cook is one of Britain’s most talented and amusing artists .Beryl’s pictures feature women of all shapes and sizes enjoying themselves .Born between the two world wars, Beryl Cook eventually left Kendrick School in Reading at the age of 15, where she went to secretarial school and then into an insurance office. After moving to London and then Hampton, she eventually married her next door neighbour from Reading, John Cook. He was an officer in the Merchant Navy and after he left the sea in 1956, they bought a pub for a year before John took a job in Southern Rhodesia with a motor company. Beryl bought their young son a box of watercolours, and when showing him how to use it, she decided that she herself quite enjoyed painting. John subsequently bought her a child’s painting set for her birthday and it was with this that she produced her first significant work, a half-length portrait of a dark-skinned lady with a vacant expression and large drooping breasts. It was aptly named ‘Hangover’ by Beryl’s husband and</p>
+                        <p>It is often frustrating to attempt to plan meals that are designed for one. Despite this fact, we are seeing more and more recipe books and Internet websites that are dedicated to the act of cooking for one. Divorce and the death of spouses or grown children leaving for college are all reasons that someone accustomed to cooking for more than one would suddenly need to learn how to adjust all the cooking practices utilized before into a streamlined plan of cooking that is more efficient for one person creating less</p>
+                    </div>
+                </div>
+                <div class="tab-pane specification" id="specific">
+                    <div class="row">
+                        <div class="col-6"><span class="text-capitalize">width</span></div>
+                        <div class="col-6"><span>128mm</span></div>
+                        <hr>
+                        <div class="col-6"><span class="text-capitalize">height</span></div>
+                        <div class="col-6"><span>508mm</span></div>
+                        <hr>
+                        <div class="col-6"><span class="text-capitalize">depth</span></div>
+                        <div class="col-6"><span>85mm</span></div>
+                        <hr>
+                        <div class="col-6"><span class="text-capitalize">weight</span></div>
+                        <div class="col-6"><span>52gm</span></div>
+                        <hr>
+                        <div class="col-6"><span class="text-capitalize">Quality checking</span></div>
+                        <div class="col-6"><span class="text-capitalize">yes</span></div>
+                        <hr>
+                        <div class="col-6"><span class="text-capitalize">Freshness Duration</span></div>
+                        <div class="col-6"><span>30days</span></div>
+                        <hr>
+                        <div class="col-6"><span class="text-capitalize">When packeting</span></div>
+                        <div class="col-6"><span>Without touch of hand</span></div>
+                        <hr>
+                        <div class="col-6"><span class="text-capitalize">Each Box contains</span></div>
+                        <div class="col-6"><span>60pcs</span></div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="comments">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="comment">
+                                <div class="comment-info">
+                                    <img src="assets/images/person-comment1.png">
+                                    <div class="comment-time">
+                                        <span class="text-capitalize">Blake Ruiz</span>
+                                        <span>12th Feb, 2017 at 05:56 pm</span>
+                                    </div>
+                                    <button class="btn text-capitalize">reply</button>
+                                </div>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque aperiam minima id commodi? Perspiciatis, cupiditate quisquam, nemo aut eaque corrupti autem sed pariatur, velit fuga rem dolore itaque vitae assumenda!</p>
+                            </div>
+                            <div class="comment comment-reply">
+                                <div class="comment-info">
+                                    <img src="assets/images/person-comment2.png">
+                                    <div class="comment-time">
+                                        <span class="text-capitalize">Blake Ruiz</span>
+                                        <span>12th Feb, 2017 at 05:56 pm</span>
+                                    </div>
+                                    <button class="btn text-capitalize">reply</button>
+                                </div>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque aperiam minima id commodi? Perspiciatis, cupiditate quisquam, nemo aut eaque corrupti autem sed pariatur, velit fuga rem dolore itaque vitae assumenda!</p>
+                            </div>
+                            <div class="comment">
+                                <div class="comment-info">
+                                    <img src="assets/images/person-comment3.png">
+                                    <div class="comment-time">
+                                        <span class="text-capitalize">Blake Ruiz</span>
+                                        <span>12th Feb, 2017 at 05:56 pm</span>
+                                    </div>
+                                    <button class="btn text-capitalize">reply</button>
+                                </div>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque aperiam minima id commodi? Perspiciatis, cupiditate quisquam, nemo aut eaque corrupti autem sed pariatur, velit fuga rem dolore itaque vitae assumenda!</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="add-comment share">
+                                <h4>Post a comment</h4>
+                                <form>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" placeholder="Your Full Name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" placeholder="Email Address">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="tel" class="form-control" placeholder="Phone Number">
+                                    </div>
+                                    <div class="mb-3">
+                                        <textarea class="form-control" placeholder="Message"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-secondary rounded-0 submit main-btn left-btn"><a href="#" class="text-uppercase text-decoration-none">submit now</a></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane active" id="review">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="reviews-overall">
+                                <div class="row">
+                                    <div class="col-5 col-sm-6">
+                                        <div class="overall">
+                                            <h4 class="text-capitalize">overall</h4>
+                                            <h3>4.0</h3>
+                                            <h5>(03 Reviews)</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-7 col-sm-6">
+                                        <div class="reviews-star">
+                                            <span>Based on 3 Reviews</span>
+                                            <ul class="stars list-unstyled">
+                                                <li>
+                                                    <span>5 Star</span>
+                                                    <a href="#">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                    <span>01</span>
+                                                </li>
+                                                <li>
+                                                    <span>4 Star</span>
+                                                    <a href="#">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                    <span>01</span>
+                                                </li>
+                                                <li>
+                                                    <span>3 Star</span>
+                                                    <a href="#">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                    <span>01</span>
+                                                </li>
+                                                <li>
+                                                    <span>2 Star</span>
+                                                    <a href="#">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                    <span>01</span>
+                                                </li>
+                                                <li>
+                                                    <span>1 Star</span>
+                                                    <a href="#">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                    <span>01</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                 
+                            </div>  
+                            <div class="comment">
+                                <div class="comment-info">
+                                    <img src="assets/images/person-comment1.png">
+                                    <div class="comment-time">
+                                        <span class="text-capitalize">Blake Ruiz</span>
+                                        <div class="rate">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <button class="btn text-capitalize">reply</button>
+                                </div>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque aperiam minima id commodi? Perspiciatis, cupiditate quisquam, nemo aut eaque corrupti autem sed pariatur, velit fuga rem dolore itaque vitae assumenda!</p>
+                            </div>
+                            <div class="comment comment-reply">
+                                <div class="comment-info">
+                                    <img src="assets/images/person-comment2.png">
+                                    <div class="comment-time">
+                                        <span class="text-capitalize">Blake Ruiz</span>
+                                        <div class="rate">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <button class="btn text-capitalize">reply</button>
+                                </div>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque aperiam minima id commodi? Perspiciatis, cupiditate quisquam, nemo aut eaque corrupti autem sed pariatur, velit fuga rem dolore itaque vitae assumenda!</p>
+                            </div>
+                            <div class="comment">
+                                <div class="comment-info">
+                                    <img src="assets/images/person-comment3.png">
+                                    <div class="comment-time">
+                                        <span class="text-capitalize">Blake Ruiz</span>
+                                        <div class="rate">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <button class="btn text-capitalize">reply</button>
+                                </div>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque aperiam minima id commodi? Perspiciatis, cupiditate quisquam, nemo aut eaque corrupti autem sed pariatur, velit fuga rem dolore itaque vitae assumenda!</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="add-review share">
+                                <h4>Add a Review</h4>
+                                <span>Your Rating:</span>
+                                <div class="add-star">
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                </div>
+                                <span>Outstanding</span>
+                                <form>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" placeholder="Your Full Name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" placeholder="Email Address">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="tel" class="form-control" placeholder="Phone Number">
+                                    </div>
+                                    <div class="mb-3">
+                                        <textarea class="form-control" placeholder="Review"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-secondary rounded-0 submit main-btn left-btn"><a href="#" class="text-uppercase text-decoration-none">submit now</a></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Start Advantages -->
+    <section class="Advantages bg-primary">
+        <div class="container">
+            <div class="Advantages-info">
+                <div class="row gy-5">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="advan-content animate advant-one">
+                            <img src="assets/images/services1.svg" alt="service">
+                            <h4 class="text-capitalize">fast & free delivery</h4>
+                            <p>Free delivery on all orders</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="advan-content animate advant-two">
+                            <img src="assets/images/services2.svg" alt="service">
+                            <h4 class="text-capitalize">secure payment</h4>
+                            <p>Free delivery on all orders</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="advan-content animate advant-three">
+                            <img src="assets/images/services3.svg" alt="service">
+                            <h4 class="text-capitalize">money back guarantee</h4>
+                            <p>Free delivery on all orders</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="advan-content animate advant-four">
+                            <img src="assets/images/services4.svg" alt="service">
+                            <h4 class="text-capitalize">online support</h4>
+                            <p>Free delivery on all orders</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Advantages -->
+     <!-- Start Footer -->
+     <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="row gy-4 justify-content-between">
+                    <div class="col-sm-7 col-lg-4">
+                        <div class="footer-info">
+                            <a href="#"><img src="assets/images/logosticky.webp" alt="footer logo"></a>
+                            <p>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
+                            <div class="social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-lg-2">
+                        <div class="footer-links">
+                            <h5 class="text-capitalize">quick links</h5>
+                            <ul class="list-unstyled">
+                                <li><a class="text-capitalize" href="#">image licensin</a></li>
+                                <li><a class="text-capitalize" href="#">style guide</a></li>
+                                <li><a class="text-capitalize" href="#">privacy policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-lg-2">
+                        <div class="footer-links">
+                            <h5 class="text-capitalize">shop category</h5>
+                            <ul class="list-unstyled">
+                                <li><a class="text-capitalize" href="#">image licensin</a></li>
+                                <li><a class="text-capitalize" href="#">style guide</a></li>
+                                <li><a class="text-capitalize" href="#">privacy policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-lg-2">
+                        <div class="footer-links">
+                            <h5 class="text-capitalize">Partners</h5>
+                            <ul class="list-unstyled">
+                                <li><a class="text-capitalize" href="#">image licensin</a></li>
+                                <li><a class="text-capitalize" href="#">style guide</a></li>
+                                <li><a class="text-capitalize" href="#">privacy policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span>Copyright ©2022 All rights reserved</span>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Start Go To Top -->
+    <button class="btn go-to-top">
+        <i class="fas fa-level-up-alt"></i>
+    </button>
+    <!-- End Go To Top -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            let owl = $(".my-slider").owlCarousel({
+                items: 1,
+                loop: true,
+                dots: true,
+                dotsData: true,
+                nav: false
+                
+            });
+            $('.owl-dot').click(function() {
+                owl.trigger('to.owl.carousel', [$(this).index(), 1000]);
+            })
+        });
+    </script>
+</body>
+</html>

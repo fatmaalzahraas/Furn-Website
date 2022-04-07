@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furn Website</title>
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/login.css"> 
+    <link href="assets/images/icon.png" rel="icon">
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader-inline">
+            <div class="circle">
+            </div>
+            <div class="image">
+                <img src="assets/images/logosticky.webp" alt="loader">
+            </div>
+        </div>
+    </div>
+    <section class="login-page">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-8">
+                    <div class="login">
+                        <div class="form-title text-center">
+                            <h3 class="text-capitalize">login</h3>
+                            <p>Enter Login details to get access</p>
+                        </div>
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label text-capitalize">Username Or Email Address</label>
+                                <input type="email" class="form-control form-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username / Email address" required>
+                              </div>
+                              <div class="mb-3 eye">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control form-input" id="exampleInputPassword1" placeholder="Enter Password" required>
+                                <i class="fas fa-eye"></i>
+                              </div>
+                              <div class="box d-flex justify-content-between mt-4">
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label text-capitalize check-label" for="exampleCheck1">Keep Me Logged In</label>
+                                </div>
+                                <a href="#" class="text-capitalize text-decoration-none link">Forgot Password?</a>
+                              </div>                              
+                             <div class="box d-flex justify-content-between">
+                                <span>Don’t have an account? <a href="sign up.html" class="text-capitalize link text-decoration-none">sign up</a> here</span>
+                                <button type="submit" class="btn btn-secondary rounded-0 submit">Login</button>
+                             </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+@use "../custom";
+@use "mixins" as m;
+
+%fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+%fadeInUpTwo {
+    animation-name: fadeInUpTwo;
+    animation-duration: 0.5s;
+    animation-fill-mode: both
+}
+@include m.keyframes-animation(fadeInUp) {
+    from {
+        @include m.prefix(transform, translateY(40px), webkit moz ms o);  
+    }
+    to {
+        @include m.prefix(transform, translateY(0), webkit moz ms o);
+    }
+}
+@include m.keyframes-animation(fadeInUpTwo) {
+    from {
+        @include m.prefix(transform, translateY(80px), webkit moz ms o);
+        @include m.opacity(0, hidden);
+    }
+    to {
+        @include m.prefix(transform, translateY(0), webkit moz ms o);
+        @include m.opacity(1, visible);
+    }
+}
+@include m.keyframes-animation(fade-in-down) {
+    from {
+        @include m.prefix(transform, translateY(-10px), webkit moz ms o);
+    }
+    to {
+        @include m.prefix(transform, translateY(0), webkit moz ms o);
+    }
+}
+@include m.keyframes-animation(preloader) {
+    from {
+        @include m.prefix(transform, rotateZ(-360deg), webkit moz ms o);
+    }
+    to {
+        @include m.prefix(transform, rotateZ(0deg), webkit moz ms o);
+    }
+}

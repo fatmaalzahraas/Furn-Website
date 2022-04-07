@@ -1,0 +1,84 @@
+@use "../custom" as *;
+@use "../globalrules" as *;
+@use "../components/mixins" as m;
+@use "../components/animations" as *;
+
+.slide {
+    position: relative;
+    background-color: $primary;    
+    margin-top: -33px; 
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 130px;
+        height: 100px;
+        background-color: $white;
+    }
+    @include media-breakpoint-up(xl) {
+        padding-right: 1.9rem;
+        padding-bottom: 5.1rem;
+    }
+    @include media-breakpoint-between(sm, xl) {
+        padding-right: 1.3rem;
+        padding-bottom: 3rem;
+    }
+    &-container {
+        position: relative;
+        background-image: url("../../assets/images/furniture.webp");
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding: 5.5rem 0; 
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(128,128,128,0.3);
+        }
+        @include media-breakpoint-up(sm) {
+            width: 98.9%;
+        }
+       .info {
+           position: relative;
+           z-index: 2;
+        h1 {
+            font: {
+                size: $h2;
+                weight: 800;
+            };
+            color: $white;
+            cursor: default;
+            user-select: none;
+            margin-bottom: 0.7rem;
+            @extend %fadeInUp;
+            animation-delay: 0.8s;
+            @include media-breakpoint-up(sm) {
+                font-size: $h1 - $h5;
+            }
+        }
+        .crumb-title {
+            user-select: none;
+            .breadcrumb-item + .breadcrumb-item::before {
+                color: $white;
+            }
+            .home-link {
+                color: $white;
+                font: {
+                    weight: 600;
+                };
+            }
+            .page-title.active {
+                color: $secondary;
+                font: {
+                    weight: 600;
+                };
+                cursor: default;
+            }
+        }
+       }
+    }
+}

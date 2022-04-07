@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furn Website</title>
+    <link rel="stylesheet" href="assets/css/categories.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/ion.rangeSlider.min.css">
+    <link href="assets/images/icon.png" rel="icon">
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader-inline">
+            <div class="circle">
+            </div>
+            <div class="image">
+                <img src="assets/images/logosticky.webp" alt="loader">
+            </div>
+        </div>
+    </div>
+    <!-- Start Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light menu py-0 align-items-start">
+        <a class="navbar-brand logo-link me-0" href="index.html">
+            <img class="logo" src="assets/images/logo.webp" alt="logo">
+            <img class="sticky-logo" src="assets/images/logosticky.webp" alt="logo">
+        </a>
+        <div class="toggler">
+            <button class="navbar-toggler btn-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span>Menu</span> <span class="navbar-toggler-icon"></span>
+             </button>
+        </div>
+        <div class="nav-content bg-primary">
+            <div class="container contain">
+                <div class="collapse navbar-collapse link-content" id="navbarSupportedContent">
+                    <div class="nav-contain">
+                        <ul class="navbar-nav nav-links">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="products.html">Product</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item drop-menu">
+                                <a class="nav-link page-icon" href="#">Page <i class="fas fa-plus plus-icon d-lg-none"></i></a>                
+                                <ul class="sub-menu">
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="card.html">Card</a></li>
+                                    <li><a href="categories.html">Categories</a></li>
+                                    <li><a href="checkout.html">Checkout</a></li>
+                                    <li><a href="product-detail.html">Product Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="nav-search d-flex ms-lg-auto">
+                            <form>
+                                <input class="form-control search" type="search" placeholder="Search Products">
+                                 <i class="fas fa-search"></i>
+                            </form>
+                            <a class="text-decoration-none account-link" href="login.html">My Account</a>
+                            <div class="icon-content">
+                                <img src="assets/images/shopping-bag.png" alt="shop-icon" class="store-icon">
+                                <span class="cart-number">0</span>
+                            </div> 
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        
+    </nav>
+    <!-- End Navbar Section -->
+    <!--Start Slide Section -->
+    <section class="slide">
+        <div class="slide-container start-sticky">
+            <div class="container info">
+                <h1 class="text-uppercase">categories</h1>
+                <nav class="crumb-title" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a class="home-link text-decoration-none text-capitalize" href="index.html">home</a></li>
+                      <li class="breadcrumb-item active page-title text-capitalize-current=" aria-current="page">categories</li>
+                    </ol>
+                  </nav>
+            </div>
+        </div>
+    </section>
+    <!--End Slide Section -->
+    <section class="shop-with-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-lg-8 col-md-10">
+                    <div class="title">
+                        <h2 class="text-uppercase">shop with us</h2>
+                        <p>Browse from 230 latest items</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="filter-title d-flex">
+                                <div class="icon">
+                                    <i class="fas fa-filter"></i>
+                                </div>
+                                <h4 class="text-capitalize sub-title">filter product</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-content">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="type-filter box">
+                                    <select class="type wide" >
+                                        <option value="type">Type</option>
+                                        <option value="sofa">Sofa</option>
+                                        <option value="table">Table</option>
+                                        <option value="chair">Chair</option>
+                                        <option value="bed">Bed</option>
+                                        <option value="lightning">Lightning</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="size-filter box">
+                                    <select class="size wide">
+                                        <option value="size">Size</option>
+                                        <option value="2.2ft">2.2ft</option>
+                                        <option value="5.5ft">5.5ft</option>
+                                        <option value="8.2ft">8.2ft</option>
+                                        <option value="10.2ft">10.2ft</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="color-filter box">
+                                    <select class="color wide">
+                                        <option value="">Color</option>
+                                        <option value="">White</option>
+                                        <option value="">Blue</option>
+                                        <option value="">Green</option>
+                                        <option value="">Gray</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="price-filter box">
+                                    <select class="range wide">
+                                        <option value="price-range">Price Range</option>
+                                        <option value="">$10 to $20</option>
+                                        <option value="">$20 to $30</option>
+                                        <option value="">$50 to $80</option>
+                                        <option value="">$100 to $120</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="range-of-price">
+                        <h4 class="text-capitalize sub-title">price range</h4>
+                        <div class="range-slider">
+                            <input type="text" class="js-range-slider" name="my_range" value="" />
+                        </div>
+                        <div class="from-range">
+                            <div class="price">
+                                <span>Price :</span>
+                            </div>
+                            <div class="extra-controls from-to">
+                                <input type="text" class="js-input-from" value="0" readonly/>
+                                <span>to</span>
+                                <input type="text" class="js-input-to" value="0" readonly/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="latest-product">
+                        <h4 class="text-capitalize sub-title">latest product</h4>
+                       <div class="check">
+                           <input type="checkbox" id="check1">
+                           <label for="check1">Any</label>
+                        </div>
+                       <div class="check">
+                           <input type="checkbox" id="check2">
+                           <label for="check2">Today</label>
+                        </div>
+                       <div class="check">
+                           <input type="checkbox" id="check3">
+                           <label for="check3">Last 2 days</label>
+                        </div>
+                       <div class="check">
+                           <input type="checkbox" id="check4">
+                           <label for="check4">Last 5 days</label>
+                        </div>
+                       <div class="check">
+                           <input type="checkbox" id="check5">
+                           <label for="check5">Last 10 days</label>
+                        </div>
+                       <div class="check">
+                           <input type="checkbox" id="check6">
+                           <label for="check6">Last 15 days</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-9 col-md-8">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="product-search d-flex justify-content-md-between flex-column flex-md-row">
+                                <span class="number-of-products">39, 782 Product found</span>
+                                <div class="product-sort d-flex">
+                                    <span>Sort by</span>
+                                    <div class="sort-select">
+                                        <select id="select-one" class="category-select sort wide">
+                                            <option value="none" disabled selected>- select -</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-result">
+                        <div class="row product-list">
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                                <div class="single-product">
+                                    <div class="image">
+                                        <img src="assets/images/sofa-one.jpg" alt="">
+                                    </div>
+                                    <div class="product-caption">
+                                        <h3>
+                                            <a href="#">Bly Microfiber / Microsuede 56" Armless Loveseat</a>
+                                        </h3>
+                                        <span>$367</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                                <div class="single-product">
+                                    <div class="image">
+                                        <img src="assets/images/chair-one.jpg" alt="">
+                                    </div>
+                                    <div class="product-caption">
+                                        <h3>
+                                            <a href="#">Bly Microfiber / Microsuede 56" Armless Loveseat</a>
+                                        </h3>
+                                        <span>$367</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                                <div class="single-product">
+                                    <div class="image">
+                                        <img src="assets/images/chair-four.jpg" alt="">
+                                    </div>
+                                    <div class="product-caption">
+                                        <h3>
+                                            <a href="#">Bly Microfiber / Microsuede 56" Armless Loveseat</a>
+                                        </h3>
+                                        <span>$367</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                                <div class="single-product">
+                                    <div class="image">
+                                        <img src="assets//images/bed-four.jpg" alt="">
+                                    </div>
+                                    <div class="product-caption">
+                                        <h3>
+                                            <a href="#">Bly Microfiber / Microsuede 56" Armless Loveseat</a>
+                                        </h3>
+                                        <span>$367</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                                <div class="single-product">
+                                    <div class="image">
+                                        <img src="assets/images/table-six.jpg" alt="">
+                                    </div>
+                                    <div class="product-caption">
+                                        <h3>
+                                            <a href="#">Bly Microfiber / Microsuede 56" Armless Loveseat</a>
+                                        </h3>
+                                        <span>$367</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                                <div class="single-product">
+                                    <div class="image">
+                                        <img src="assets/images/celling-light-five.jpg" alt="">
+                                    </div>
+                                    <div class="product-caption">
+                                        <h3>
+                                            <a href="#">Bly Microfiber / Microsuede 56" Armless Loveseat</a>
+                                        </h3>
+                                        <span>$367</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                                <div class="single-product">
+                                    <div class="image">
+                                        <img src="assets/images/chair-eleven.jpg" alt="">
+                                    </div>
+                                    <div class="product-caption">
+                                        <h3>
+                                            <a href="#">Bly Microfiber / Microsuede 56" Armless Loveseat</a>
+                                        </h3>
+                                        <span>$367</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                                <div class="single-product">
+                                    <div class="image">
+                                        <img src="assets/images/bed-ten.jpg" alt="">
+                                    </div>
+                                    <div class="product-caption">
+                                        <h3>
+                                            <a href="#">Bly Microfiber / Microsuede 56" Armless Loveseat</a>
+                                        </h3>
+                                        <span>$367</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                                <div class="single-product">
+                                    <div class="image">
+                                        <img src="assets/images/celling-light-nine.jpg" alt="">
+                                    </div>
+                                    <div class="product-caption">
+                                        <h3>
+                                            <a href="#">Bly Microfiber / Microsuede 56" Armless Loveseat</a>
+                                        </h3>
+                                        <span>$367</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn main-btn top-btn mx-auto discover"><a href="#" class="text-uppercase text-decoration-none">browse more</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Start Advantages -->
+    <section class="Advantages bg-primary">
+        <div class="container">
+            <div class="Advantages-info">
+                <div class="row gy-5">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="advan-content animate advant-one">
+                            <img src="assets/images/services1.svg" alt="service">
+                            <h4 class="text-capitalize">fast & free delivery</h4>
+                            <p>Free delivery on all orders</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="advan-content animate advant-two">
+                            <img src="assets/images/services2.svg" alt="service">
+                            <h4 class="text-capitalize">secure payment</h4>
+                            <p>Free delivery on all orders</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="advan-content animate advant-three">
+                            <img src="assets/images/services3.svg" alt="service">
+                            <h4 class="text-capitalize">money back guarantee</h4>
+                            <p>Free delivery on all orders</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="advan-content animate advant-four">
+                            <img src="assets/images/services4.svg" alt="service">
+                            <h4 class="text-capitalize">online support</h4>
+                            <p>Free delivery on all orders</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Advantages -->
+    <!-- Start Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="row gy-4 justify-content-between">
+                    <div class="col-sm-7 col-lg-4">
+                        <div class="footer-info">
+                            <a href="#"><img src="assets/images/logosticky.webp" alt="footer logo"></a>
+                            <p>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
+                            <div class="social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-lg-2">
+                        <div class="footer-links">
+                            <h5 class="text-capitalize">quick links</h5>
+                            <ul class="list-unstyled">
+                                <li><a class="text-capitalize" href="#">image licensin</a></li>
+                                <li><a class="text-capitalize" href="#">style guide</a></li>
+                                <li><a class="text-capitalize" href="#">privacy policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-lg-2">
+                        <div class="footer-links">
+                            <h5 class="text-capitalize">shop category</h5>
+                            <ul class="list-unstyled">
+                                <li><a class="text-capitalize" href="#">image licensin</a></li>
+                                <li><a class="text-capitalize" href="#">style guide</a></li>
+                                <li><a class="text-capitalize" href="#">privacy policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-lg-2">
+                        <div class="footer-links">
+                            <h5 class="text-capitalize">Partners</h5>
+                            <ul class="list-unstyled">
+                                <li><a class="text-capitalize" href="#">image licensin</a></li>
+                                <li><a class="text-capitalize" href="#">style guide</a></li>
+                                <li><a class="text-capitalize" href="#">privacy policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span>Copyright ©2022 All rights reserved</span>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Start Go To Top -->
+    <button class="btn go-to-top">
+        <i class="fas fa-level-up-alt"></i>
+    </button>
+    <!-- End Go To Top -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/ion.rangeSlider.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script type="module">
+        $(document).ready(function () {
+            $("select").niceSelect();
+            let myRange,
+            min = 0,
+            max = 1000,
+            from = 0,
+            to = 0;
+            $(".js-range-slider").ionRangeSlider({
+                skin: "round",
+                type: "double",
+                min: min,
+                max: max,
+                from: 0,
+                to: 500,
+                onStart: updateInputs,
+                onChange: updateInputs
+            });
+            myRange = $(".js-range-slider").data("ionRangeSlider");
+            function updateInputs (data) {
+	            from = data.from;
+                to = data.to;
+                $(".js-input-from").prop("value", from);
+                $(".js-input-to").prop("value", to);	
+            }
+            $(".js-input-from").on("input", function () {
+            let val = $(this).prop("value");
+            if (val < min) {
+                    val = min;
+            } else if (val > to) {
+                    val = to;
+                } 
+                myRange.update({
+                    from: val
+                });
+            });
+            $(".js-input-to").on("input", function () {
+                var val = $(this).prop("value");
+                if (val < from) {
+                    val = from;
+                } else if (val > max) {
+                    val = max;
+                }
+                myRange.update({
+                    to: val
+                });
+            });
+        
+    });
+    </script>
+</body>
+</html>

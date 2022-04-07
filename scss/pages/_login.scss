@@ -1,0 +1,145 @@
+@use "../custom" as *;
+@use "../globalrules" as *;
+@use "../components/mixins" as m;
+
+.login-page {
+    background-image: url("../../assets/images/furniture.webp");
+    background-size: cover;
+    height: 100vh;
+    padding: 0.5rem 0;
+    .login {
+        background-color: $white;
+        padding: 3.2rem 3.5rem;
+        height: calc(100vh - 1rem);
+        box-shadow: 0 10px 10px 0 rgb(13 12 13 / 20%);
+        .form-title {
+            h3 {
+                color: $blue;
+                font: {
+                    size: $h3;
+                    weight: 600;
+                }
+                margin-bottom: 1.1rem;
+            }
+            p {
+                color: $gray-700;
+                font-size: $paragh - 2px;
+                margin-bottom: 3.5rem;
+            }
+        }
+        form {
+            .eye {
+                position: relative;
+                input[type=password] + i , .show {
+                    position: absolute;
+                    right: 15px;
+                    top: 70%;
+                    @include m.prefix(transform, translateY(-50%), webkit moz ms o);
+                    cursor: pointer;
+                }
+            }
+            label {
+                color: $blue;
+                font: {
+                    weight: 500;
+                    size: $paragh + 1;
+                }
+            }
+            .form-input {
+                padding: 0.8rem 1.8rem;
+                @include m.prefix(border-radius, 0, webkit moz ms o);
+                border-color: $gray-300;
+            }
+            input:focus {
+                outline: 0;
+                box-shadow: none;
+            }
+            @include m.placeholder {
+                color: $gray-700;
+                font: {
+                    weight: 300;
+                    size: $paragh - 3px;
+                }
+            }
+            .link {
+                color: $secondary;
+                font-size: $paragh - 2px;
+            }
+            .box {
+                flex-direction: column;
+                @include media-breakpoint-up(md) {
+                    flex-direction: row;
+                    align-items: center;
+                }
+            }
+            > div:last-of-type {
+                margin-top: 1.3rem;
+                @include media-breakpoint-up(md) {
+                    margin-top: 4rem;
+                }
+            }
+            .form-check {
+                padding-left: 0;
+            }
+            input[type=checkbox] {
+                display: none;
+            }
+            .check-label {
+                position: relative;
+                padding-left: 2rem;
+                cursor: pointer;
+            }
+            input[type=checkbox] + label::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                @include m.prefix(transform, translateY(-50%), webkit moz ms o);
+                border: 1px solid $gray-300;
+                @include m.prefix(border-radius, 4px, webkit moz ms o);
+                width: 20px;
+                height: 20px;
+                background: transparent;
+                @include m.transition(0.2s);
+                cursor: pointer;
+
+            }
+            input[type=checkbox] + label::after {
+                @extend %fa-icon;
+                @extend .fas;
+                content: fa-content($fa-var-check);
+                position: absolute;
+                top: 50%;
+                left: 0;
+                @include m.prefix(transform, translateY(-50%), webkit moz ms o);
+                width: 20px;
+                height: 20px;
+                background-color: $secondary;
+                color: $white;
+                @include m.prefix(border-radius, 4px, webkit moz ms o);
+                text-align: center;
+                font-size: $paragh - 2px;
+                line-height: 20px;
+                opacity: 0.3;
+                @include m.transition(all 0.5s ease);
+            }
+            input[type=checkbox]:checked + label::after {
+                opacity: 1;
+            }
+            span {
+                color: $gray-700;
+                font-size: $paragh - 2px;
+            }
+            button {
+                color: $white;
+                padding: 1rem 2.5rem;
+                @include media-breakpoint-down(md) {
+                    margin-top: 1.2rem;
+                }
+            }
+            button:hover {
+                background-color: $secondary;
+            }
+        }
+    }
+}

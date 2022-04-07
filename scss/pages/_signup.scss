@@ -1,0 +1,9 @@
+@use "login" as *;
+
+.login-page {
+    padding-bottom: 0;
+    .login {
+        height: 100%;
+     }
+}
+

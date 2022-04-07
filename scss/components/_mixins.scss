@@ -1,0 +1,36 @@
+//transition
+@mixin transition($argum...) {
+    -webkit-transition: $argum;
+    -moz-transition: $argum;
+    -ms-transition: $argum;
+    -o-transition: $argum;
+    transition: $argum;
+}
+//prefixes
+@mixin prefix($property, $value, $prefixes) {
+    @each $prefix in $prefixes {
+        -#{$prefix}-#{$property}: $value;
+    }
+    #{$property}: $value;
+}
+//placeholder
+@mixin placeholder {
+    ::-webkit-input-placeholder {@content};
+    :-moz-placeholder {@content};
+    ::-moz-placeholder {@content};
+    :-ms-input-placeholder {@content};
+}
+//keyframes animation
+@mixin keyframes-animation($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @keyframes #{$name} {
+        @content;
+    }
+}
+//opacity
+@mixin opacity($opacity, $visibility) {
+    opacity: $opacity;
+    visibility: $visibility;
+}

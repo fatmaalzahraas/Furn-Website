@@ -1,0 +1,109 @@
+@use "custom" as *;
+@use "components/animations";
+@use "components/mixins" as m;
+@use "../node_modules/owl.carousel/src/scss/owl.carousel.scss" as *;
+@use "../node_modules/owl.carousel/src/scss/owl.theme.default.scss" as *;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+html:focus-within {
+    scroll-behavior: smooth;
+  }
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+$h1: 70px;
+$h2: 38px;
+$h3: 30px;
+$h4: 20px;
+$h5: 17px;
+$paragh: 16px;
+.heading {
+    animation-delay: 0.3s;
+    @include m.opacity(0, hidden);
+    font: {
+        size: $h3 - 5px;
+        weight: 700;
+    };
+    margin-bottom: 1.3rem;
+    color: $black;
+    @include media-breakpoint-up(md) { 
+        font: {
+            size: $h2;
+        }
+    }
+    @include media-breakpoint-only(sm) {
+        font-size: $h3;
+    }
+}
+.paragrph {
+    animation-delay: 0.3s;
+    @include m.opacity(0, hidden);
+    font: {
+        size: $paragh;
+        weight: 400;
+    }
+    color: $gray-600;
+    width: 90%;
+    line-height: 1.6;
+    margin-bottom: 1.9rem;
+    @include media-breakpoint-up(md) {
+        width: 60%;
+     }
+     @include media-breakpoint-only(sm) {
+         width: 70%;
+     }
+}
+.animate-sections {
+    @extend %fadeInUpTwo;
+}
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $gray-100;
+    z-index: 9999;
+    text-align: center;
+    &-inline {
+        position: relative;
+        top: 50%;
+        @include m.prefix(transform, translateY(-50%), webkit moz ms o);
+        .circle {
+            position: relative;
+            top: 50%;
+            margin: 0 auto;
+            @include m.prefix(transform, translateY(-50%), webkit moz ms o);
+            @include m.prefix(border-radius, 50%, webkit moz ms o);
+            box-shadow: 0 1px 5px 0 rgb(35 181 185 / 15%); 
+            width: 100px;
+            height: 100px;
+            z-index: 15px;
+            @include m.transition(0.3s);
+            border-width: 1px;
+            border-style: solid;
+            border-top-color: $secondary;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            background-color: $white;
+            @include m.prefix(animation, preloader 2s infinite ease, webkit moz ms o);
+        }
+        .image {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            z-index: 200;
+            @include m.prefix(transform, translateY(-50%), webkit moz ms o);
+            //margin: 0 auto;
+            img {
+                max-width: 50px;
+            }
+        }
+
+    }
+}

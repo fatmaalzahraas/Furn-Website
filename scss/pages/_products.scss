@@ -1,0 +1,23 @@
+@use "../custom" as *;
+@use "../globalrules" as *;
+@use "../components/mixins" as m;
+@use "../components/animations" as *;
+@use "homepage" as *;
+
+.popular-products {
+    .main-btn {
+        margin-top: 3.5rem;
+    }
+    .popular-product {
+        position: relative;
+        .add-cart {
+            position: absolute;
+            bottom: 13px;
+            right: 15px;
+            font-size: $h3 - 3px;
+            color: $secondary;
+            cursor: pointer;
+        }
+    }
+    
+}

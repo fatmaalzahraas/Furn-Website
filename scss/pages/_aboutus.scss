@@ -1,0 +1,42 @@
+@use "../custom" as *;
+@use "../globalrules" as *;
+@use "../components/mixins" as m;
+
+.our-story {
+    padding: 6.3rem 0 4rem 0;
+    h2 {
+        @include m.opacity(1, visible);
+        margin-bottom: 3rem;
+        &:not(:first-of-type) {
+            margin-top: 5.3rem;
+        }
+    }
+    p {
+        @include m.opacity(1, visible);
+        font-size: $h5;
+        font-weight: 400;
+        color: $gray-700;
+        line-height: 1.6;
+        width: 85%;
+        margin-bottom: 3.8rem;
+        @include media-breakpoint-up(md) {
+            font-size: $h4;
+        }
+    }
+    .gradient {
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, #fff 30% 33%, rgba(255, 255, 255, 0) 33% 50%, #fff 50% 53%, rgba(255, 255, 255, 0) 53% 70%, #fff 70% 73%, rgba(255, 255, 255, 0) 70% 100%);
+            background-size: 100% 100%;
+        }
+    }
+}
+.instagram-area {
+    margin-bottom: 7rem;
+}

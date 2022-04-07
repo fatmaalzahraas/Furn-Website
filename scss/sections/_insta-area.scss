@@ -1,0 +1,61 @@
+@use "../custom" as *;
+@use "../globalrules" as *;
+@use "../components/mixins" as m;
+@use "../components/animations" as *;
+
+.instagram-area {
+   .insta-info {
+       margin-bottom: 2.5rem;       
+       @include media-breakpoint-up(lg) {
+        padding-left: 1.9rem;
+        padding-right: 1.9rem;
+       }
+        i {
+            color: $secondary;
+            font-size: $h1 - 8px;
+            margin-bottom: 2rem;
+            @include media-breakpoint-up(md) {
+                font-size: $h1;
+            }
+        }
+        h2 {
+            @include m.opacity(1, visible);
+        }
+        p {
+            width: 100%;
+            @include m.opacity(1, visible);
+        }
+   } 
+   .image {
+       position: relative;
+       &::before {
+           content: "";
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           background-color: $blue;
+           opacity: 0;
+       }
+       i {
+           position: absolute;
+           top: 45%;
+           left: 50%;
+           @include m.prefix(transform, translate(-50%, -50%), webkit moz ms o);
+           z-index: 2;
+           color: $white;
+           font-size: $h2;
+           @include m.opacity(0, hidden);      
+           @include m.transition(all 0.3s ease);
+       }
+       &:hover::before{
+           opacity: 0.3;
+           @include m.transition(opacity 0.3s ease);
+       }
+       &:hover i {
+          @include m.opacity(1, visible);
+          top: 50%;       
+       }
+   }
+}

@@ -1,0 +1,38 @@
+{
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "autoprefixer": "^10.4.1",
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.7.2",
+    "owl.carousel": "^2.3.4",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
+    "smooth-scrollbar": "^8.7.4"
+  },
+  "name": "furn-websie",
+  "description": "furniture website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "sass": "^1.45.2"
+  },
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fatmaalzahraas/Furn-Website.git"
+  },
+  "keywords": [
+    "bootstrap-v5",
+    "sass",
+    "js",
+    "es6"
+  ],
+  "author": "fatma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fatmaalzahraas/Furn-Website/issues"
+  },
+  "homepage": "https://github.com/fatmaalzahraas/Furn-Website#readme"
+}

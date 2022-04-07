@@ -1,0 +1,110 @@
+@use "../custom" as *;
+@use "../globalrules" as *;
+@use "../components/mixins" as m;
+@use "../components/animations" as *;
+
+.slide {
+    position: relative;
+    min-height: 100vh;
+    padding-right: 30px;
+    padding-bottom: 70px;
+    margin-top: -33px;    
+    background-color: $primary;
+    @include media-breakpoint-down(lg) {
+        & {
+            padding-right: 0;
+            padding-bottom: 0;
+            min-height: 0;
+        }
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        background-color: $white;
+        @include media-breakpoint-down(lg) {
+            width: 0;
+            height: 0;
+        }
+    }
+    &-container {
+        background-image: url("../../assets/images/furniture.webp");
+        background-repeat: no-repeat;
+        width: 98.9%;
+        position: relative;
+        z-index: 1;
+        padding: 130px 0;
+        .slide-info {
+            width: 45%;
+            background-color: $white;
+            padding: 40px 60px;
+            margin-left: 40px;
+            @include media-breakpoint-down(md) {
+                width: 90%;
+                margin-left: 0;
+                padding: 30px 40px;
+            }
+            @include media-breakpoint-between(md, lg) {
+                width: 60%;
+                margin-left: 30px;
+            }
+            @include media-breakpoint-between(lg, xl) {
+                width: 50%;
+            }
+            .slide-sale {
+                font: {
+                    size: $paragh + 10px;
+                    weight: 600;
+                };
+                color: $gray-600;
+                @include media-breakpoint-down(md){
+                    font-size: $paragh + 3px;
+                }
+            }
+            .head-one {
+                font: {
+                    size: $h1;
+                    weight: 800;
+                }
+                margin-top: 10px;
+                @extend %fadeInUp;
+                animation-delay: 0.8s;
+                @include media-breakpoint-down(md){
+                    font-size: $h2 + 1px;
+                }
+            }
+            p {
+                color: rgb(100, 109, 119);;
+                font-size: $paragh + 2px;
+                line-height: 1.8;
+                margin-bottom: 25px;
+                @extend %fadeInUp;
+                animation-delay: 1s;
+                @include media-breakpoint-down(md) {
+                    font-size: $paragh - 1px;
+                }
+            }
+            .main-btn {
+                @extend %fadeInUp;
+                animation-delay: 1s;
+            }
+        }
+        @include media-breakpoint-up(lg) {
+            & {
+                background-size: cover;
+            }
+        }
+        @include media-breakpoint-down(lg) {
+            & {
+                background-position: center center;
+                width: 100%;
+                padding: 50px 0;
+            }
+        }
+
+    }
+}
+
